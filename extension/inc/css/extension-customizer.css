@@ -1,0 +1,32 @@
+/************************* EXTENSION CUSTOMIZER CUSTOM CSS **************************************/
+#about_extension {
+	background-color: #f2095e;
+	border: 1px solid #f2095e;
+	box-shadow: none;
+	color: #fff;
+	margin-top: 10px;
+	border-radius: 0;
+		-ms-transition: all 0.3s ease 0s;
+		-moz-transition: all 0.3s ease 0s;
+		-webkit-transition: all 0.3s ease 0s;
+		-o-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+}
+#about_extension:hover,
+#about_extension:focus  {
+	background-color: #bbb;
+	border: 1px solid #bbb;
+	box-shadow: none;
+	color: #fff;
+}
+#extension_upgrade{
+	display: block;
+	float: left;
+	width: 100%;
+}
+#about_extension{
+	display: block;
+	padding: 10px 0px 10px 0;
+	text-align: center;
+	margin: -5px;
+}

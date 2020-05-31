@@ -1,0 +1,13 @@
+<wpml-config>
+	<admin-texts>
+		<key name="extension_theme_options">
+			<key name="extension_search_text" />
+			<key name="extension_tag_text" />
+			<key name="extension_header_image_title" />
+			<key name="extension_header_sub_title" />
+			<key name="extension_header_image_link" />
+			<key name="extension_header_image_button" />
+			<key name="extension_img-upload-footer-image" />
+		</key>
+	</admin-texts>
+</wpml-config>
