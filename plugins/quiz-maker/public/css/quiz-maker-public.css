@@ -291,7 +291,8 @@ form[id^="ays_finish_quiz_"] {
     z-index: 99999;
 }
 .select2-container.select2-container--default.select2-container--open .select2-dropdown--below{
-    animation: fadeInUp .3s;
+    animation: fadeInUp;
+    animation-duration: .3s !important;
 }
 [id^="ays_finish_quiz_"] p.ays_message{
 	font-size: 20px;
@@ -497,7 +498,8 @@ form[id^="ays_finish_quiz_"] {
     height:15px;
 }
 .ays-progress-bar.fourth:after {
-    animation: ays_progress_bar 0.8s linear infinite;
+    animation: ays_progress_bar linear infinite;
+    animation-duration: 0.8s !important;
 }
 
 
@@ -950,19 +952,23 @@ form[id^="ays_finish_quiz_"] {
 }
 .lds-ellipsis div:nth-child(1) {
 	left: 6px;
-	animation: lds-ellipsis1 0.6s infinite;
+	animation: lds-ellipsis1 infinite;
+	animation-duration: 0.6s !important;
 }
 .lds-ellipsis div:nth-child(2) {
 	left: 6px;
-	animation: lds-ellipsis2 0.6s infinite;
+	animation: lds-ellipsis2 infinite;
+	animation-duration: 0.6s !important;
 }
 .lds-ellipsis div:nth-child(3) {
 	left: 26px;
-	animation: lds-ellipsis2 0.6s infinite;
+	animation: lds-ellipsis2 infinite;
+	animation-duration: 0.6s !important;
 }
 .lds-ellipsis div:nth-child(4) {
 	left: 45px;
-	animation: lds-ellipsis3 0.6s infinite;
+	animation: lds-ellipsis3 infinite;
+	animation-duration: 0.6s !important;
 }
 .ays_grid_view_container {
     display: flex;
@@ -1520,7 +1526,8 @@ form[id^="ays_finish_quiz_"] {
 .lds-spinner2 div,
 .lds-spinner div {
   transform-origin: 32px 32px;
-  animation: lds-spinner 1.2s linear infinite;
+  animation: lds-spinner linear infinite;
+  animation-duration: 1.2s !important;
 }
 .lds-spinner2 div:after,
 .lds-spinner div:after {
@@ -1655,14 +1662,14 @@ div.ays_quiz_results_page img {
 
 
 .ays_animated_x5ms {
-    -webkit-animation-duration: .5s;
-    animation-duration: .5s;
+    -webkit-animation-duration: .5s !important;
+    animation-duration: .5s !important;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 }
 .ays_animated_x1s {
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
+    -webkit-animation-duration: 1s !important;
+    animation-duration: 1s !important;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 }

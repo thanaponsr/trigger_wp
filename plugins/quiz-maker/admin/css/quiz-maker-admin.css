@@ -397,6 +397,7 @@ a.add-question-image:focus{
 
 table.ays-answers-table,
 table.ays-questions-table,
+table.ays-show-user-page-table,
 table.ays-add-questions-table{
     border-collapse: collapse;
     width: 100%;
@@ -447,6 +448,7 @@ table.ays-questions-table th.th-150 {
     width: 100px;
 }
 
+table.ays-show-user-page-table tr td,
 table.ays-answers-table tr.even td,
 table.ays-answers-table tr.even th,
 table.ays-questions-table tr.even td,
@@ -474,6 +476,7 @@ table.ays-add-questions-table tfoot th{
     background: #666;
     color: white;
 }
+table.ays-show-user-page-table tr td,
 table.ays-answers-table tr td,
 table.ays-answers-table tr th,
 table.ays-questions-table tr td,
@@ -488,6 +491,44 @@ table.ays-questions-table tbody td.empty_quiz_td {
     cursor: default;
     position: static;
 }
+
+/*User Page Settings Table Start*/
+.ays-show-user-page-table-wrap {
+    border: 2px dashed #9E9E9E;
+    padding: 20px;
+    display: flex;
+}
+.ays-show-user-page-table {
+    height: 100%;
+    margin: 0;
+}
+
+.ays-show-user-page-table .ays_user_page_sortable_placeholder,
+.ays-show-user-page-table li {
+    font-weight: normal !important;
+    font-size: 14px;
+    padding: 10px;
+    vertical-align: middle;
+    text-align: center;
+    width: 120px;
+    margin-right: 10px;
+    cursor: move;
+    position: relative;
+    float: left;
+}
+
+.ays-show-user-page-table li:last-child {
+    clear: right;
+}
+.ays-show-user-page-table li label{
+    margin-bottom: 0;
+}
+
+.ays-show-user-page-table .ays_user_page_sortable_placeholder {
+    border: 1px dotted #aaa;
+    background-color: #ccc;
+}
+/*User Page Settings Table End*/
 
 a.ays-add-interval,
 a.ays-add-answer {

@@ -4,7 +4,7 @@ Donate link: https://ays-pro.com/index.php/wordpress/quiz-maker
 Tags:  quiz maker, exam, quiz, test, WordPress quiz plugin
 Requires at least: 4.0
 Tested up to: 5.4.1
-Stable tag: 5.0.3
+Stable tag: 5.0.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -296,6 +296,15 @@ If you're wondering how to make a quiz, it's easy, just check "Is it easy to cre
 
 
 == Changelog ==
+
+= 5.0.5 =
+* Fixed: Translation french issues
+* Fixed: Animation duration issue
+* Fixed: Buttons Text Color in Live Preview
+* Updated: PRO features price list
+
+= 5.0.4 =
+* Fixed: WP Nonce issue
 
 = 5.0.3 =
 * Added: Buttons styles section

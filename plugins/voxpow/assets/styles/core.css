@@ -1,0 +1,289 @@
+/* MODULE STYLING */
+
+.big_p {
+    font-size: 110%;
+}
+
+.top_part {
+    text-align: center;
+}
+
+.sub_title {
+    font-weight: initial;
+    font-size: 12px;
+}
+
+input.text {
+    height: 30px;
+}
+
+input[type=text], input[type=password] {
+    width: 90%;
+}
+
+p.submit {
+    text-align: center;
+}
+
+.voxpow-lower {
+    margin: 0 auto;
+    text-align: left;
+    max-width: 70%;
+    padding: 1.5rem;
+}
+
+.voxpow-box {
+    box-sizing: border-box;
+    background: #1c4a9c;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.voxpow-box {
+    margin-top: 15px;
+}
+
+.voxpow-box h1, .voxpow-box h2, .voxpow-box h3, .voxpow-box h4 {
+    text-align: center;
+    padding: 1.5rem 1.5rem 1rem 1.5rem;
+    margin: 0;
+    color: #fff;
+    line-height: 1;
+}
+
+.voxpow-box h2 {
+    font-weight: 400;
+}
+
+.voxpow-box h4 {
+    padding: 1.5rem;
+}
+
+.voxpow-box:last-of-type a {
+    color: #fff;
+}
+
+.voxpow-box p {
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    margin: 0;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+.voxpow-box table, .voxpow-box tbody, .voxpow-box tr, .voxpow-box th, .voxpow-box td {
+    vertical-align: middle;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    margin: 0;
+}
+
+.some_margin {
+    margin-bottom: 0.25rem;
+}
+
+.voxpow-box p:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.voxpow-box .voxpow-right {
+    padding-right: 1.5rem;
+}
+
+.voxpow-box .form-table th {
+    color: #fff;
+    font-weight: 400;
+    width: 260px;
+}
+
+.voxpow-box .form-table input,
+.voxpow-box .form-table select {
+    border-radius: 2px;
+}
+
+.voxpow-box .form-table select {
+    overflow: auto;
+    min-width: 100px;
+    max-height: 65px;
+}
+
+.voxpow-box .content-container .form-table:last-of-type th {
+    width: 190px;
+}
+
+.voxpow-box .content-container .form-table:last-of-type input {
+    margin-bottom: 5px;
+}
+
+.voxpow-box .form-table label {
+    min-width: 70px;
+    display: inline-block;
+    font-size: 14px;
+}
+
+.voxpow-box .a_logo {
+    max-width: 300px;
+    display: inline-block;
+}
+
+.voxpow-box .a_logo img {
+    max-width: 100%;
+}
+
+.voxpow-boxes .voxpow-box {
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.voxpow-boxes .voxpow-box:last-child {
+    margin-bottom: 1.5rem;
+}
+
+.voxpow-boxes .voxpow-box:nth-of-type(1) {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.voxpow-boxes .voxpow-box:nth-of-type(1) h2 {
+    padding-top: 0;
+}
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    background: #6589f7;
+    color: white;
+    border-radius: 50%;
+    padding: 2px;
+    width: 1rem;
+    height: 1rem;
+    text-align: center;
+    line-height: 1;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 220px;
+    line-height: 1.3;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 6px;
+
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+img.attachment-60x60 {
+    width: 60px;
+    height: 60px;
+}
+
+.content-container {
+    position: relative;
+    padding: 2rem 4.5rem;
+}
+
+.content-container fieldset {
+    margin-bottom: .5rem;
+}
+
+@media screen and (max-width: 768px) {
+    .content-container {
+        padding: 1rem 2rem;
+    }
+}
+
+.warning-wrapper {
+    width: 100%;
+    background: #9065f7;
+    margin: 1rem 1.5rem;
+    padding: 1rem;
+    margin: 0;
+    border-radius: 20px;
+}
+
+form input.button.button-primary.button-large {
+    padding: 1rem 1.5rem;
+    height: auto;
+    line-height: 1;
+    border: none;
+    background: #6589f2;
+    box-shadow: none;
+}
+
+.voxpow-image {
+    display: block;
+    width: 100px;
+    position: absolute;
+    right: 4rem;
+    top: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .voxpow-image {
+        display: none;
+    }
+}
+
+.voxpow-image img {
+    max-width: 100%;
+}
+
+.test-connection-btn {
+    background: #6589f7 !important;
+    border-color: #6589f7 !important;
+    border-radius: 15px !important;
+    color: white !important;
+    float: right;
+}
+
+.voxpow-control {
+    padding: 5px;
+    font-size: 14px;
+}
+
+.voxpow-link {
+    color: #6589f7;
+    font-weight: 600;
+}
+
+.voxpow-warrning-link {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+a.voxpow-warrning-link:hover {
+    color: #ffffff;
+}

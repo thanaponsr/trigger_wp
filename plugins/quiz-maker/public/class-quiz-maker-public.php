@@ -2226,7 +2226,6 @@ class Quiz_Maker_Public
         $quiz_container_last_part .= "
                     <input type='hidden' name='quiz_id' value='" . $id . "'/>
                     <input type='hidden' name='start_date' class='ays-start-date'/>
-                    " . wp_nonce_field('ays_finish_quiz', 'ays_finish_quiz_nonce_'.$id) . "
                 </form>";
         if($user_massage !== null){
             $quiz_container_last_part .= $user_massage;
@@ -2678,8 +2677,7 @@ class Quiz_Maker_Public
             $ob_get_clean = ob_get_clean();
             echo json_encode(array("status" => false, "message" => "No no no" ));
             wp_die();
-        }
-        if (isset($_REQUEST["ays_finish_quiz_nonce_".$quiz_id]) && wp_verify_nonce($_REQUEST["ays_finish_quiz_nonce_".$quiz_id], 'ays_finish_quiz')) {
+        } else {
             global $wpdb;
             // $quiz_id = absint(intval($_REQUEST['ays_quiz_id']));
             $questions_answers = (isset($_REQUEST["ays_questions"])) ? $_REQUEST['ays_questions'] : array();

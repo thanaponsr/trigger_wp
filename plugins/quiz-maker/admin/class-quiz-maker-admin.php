@@ -828,8 +828,13 @@ class Quiz_Maker_Admin
             $row = "<table id='ays-results-table'>";
             
             $row .= '<tr class="ays_result_element">
-                        <td colspan="4"><h1>' . __('User Information',$this->plugin_name) . '</h1></td>
-                    </tr>';
+                        <td colspan="3"><h1>' . __('User Information',$this->plugin_name) . '</h1></td>
+                        <td style="text-align: right;">
+                            <a href="https://ays-pro.com/wordpress/quiz-maker/">
+                                <button type="button" class="disabled-button" title="This property aviable only in pro version">'.__("Export", $this->plugin_name).'</button>
+                            </a>    
+                        </td>
+                    </tr>';       
             
             $row .= '<tr class="ays_result_element">
                         <td>User IP</td>

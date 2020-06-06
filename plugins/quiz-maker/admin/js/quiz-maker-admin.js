@@ -471,6 +471,7 @@
             change: function (e) {
                 setTimeout(function () {
                     $(document).find('.ays-quiz-live-container .ays-quiz-live-button').css({'color': e.target.value});
+                    $(document).find('#ays_buttons_styles_tab .ays-quiz-live-button').css({'color': e.target.value});
                 }, 1);                
             }
         };
@@ -1556,6 +1557,7 @@
                 change: function (e) {
                     setTimeout(function () {
                         $(document).find('.ays-quiz-live-container .ays-quiz-live-button').css({'color': e.target.value});
+                        $(document).find('#ays_buttons_styles_tab .ays-quiz-live-button').css({'color': e.target.value});
                     }, 1);                
                 }
             };
@@ -1747,6 +1749,7 @@
                 change: function (e) {
                     setTimeout(function () {
                         $(document).find('.ays-quiz-live-container .ays-quiz-live-button').css({'color': e.target.value});
+                        $(document).find('#ays_buttons_styles_tab .ays-quiz-live-button').css({'color': e.target.value});
                     }, 1);                
                 }
             };

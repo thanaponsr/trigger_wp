@@ -32,6 +32,23 @@
     $right_answer_sound = isset($options['right_answer_sound']) ? $options['right_answer_sound'] : '';
     $wrong_answer_sound = isset($options['wrong_answer_sound']) ? $options['wrong_answer_sound'] : '';
 
+    $default_leadboard_column_names = array(
+        "pos" => __( 'Pos.', $this->plugin_name ),
+        "name" => __( 'Name', $this->plugin_name ),
+        "score" => __( 'Score', $this->plugin_name ),
+        "duration" => __( 'Duration', $this->plugin_name ),
+        "points" => __( 'Points', $this->plugin_name ),
+    );
+
+    $default_user_page_column_names = array(
+        "quiz_name" => __( 'Quiz name', $this->plugin_name ),
+        "start_date" => __( 'Start date', $this->plugin_name ),
+        "end_date" => __( 'End date', $this->plugin_name ),
+        "duration" => __( 'Duration', $this->plugin_name ),
+        "score" => __( 'Score', $this->plugin_name ),
+        "details" => __( 'Details', $this->plugin_name )
+    );
+
      // Aro Buttons Text
 
     $buttons_texts_res      = ($actions->ays_get_setting('buttons_texts') === false) ? json_encode(array()) : $actions->ays_get_setting('buttons_texts');
@@ -619,6 +636,34 @@
                                             <input type="text" id="ays_leadboard_color" data-alpha="true" value="#99BB5A" />
                                         </div>
                                     </div>
+                                    <hr>
+                                    <div class="form-group row">
+                                        <div class="col-sm-12">
+                                            <label>
+                                                <?php echo __( " Individual Leaderboard results table columns", $this->plugin_name ); ?>
+                                                <a class="ays_help" data-toggle="tooltip" title="<?php echo __('You can sort table columns and select which columns must display on the front-end.',$this->plugin_name)?>">
+                                                    <i class="ays_fa ays_fa_info_circle"></i>
+                                                </a>
+                                            </label>
+                                            <div class="ays-show-user-page-table-wrap">
+                                                <ul class="ays-show-user-page-table">
+                                                    <?php    
+                                                        foreach ($default_leadboard_column_names as $key => $val) {
+                                                            ?>
+                                                            <li class="ays-user-page-option-row ui-state-default">
+                                                                <input type="hidden" value="<?php echo $val; ?>" />
+                                                                <input type="checkbox" id="ays_show_ind<?php echo $val; ?>" value="<?php echo $val; ?>" class="ays-checkbox-input" checked/>
+                                                                <label for="ays_show_ind<?php echo $val; ?>">
+                                                                    <?php echo $val; ?>
+                                                                </label>
+                                                            </li>
+                                                            <?php
+                                                        }
+                                                     ?>
+                                                </ul>
+                                           </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </fieldset>
@@ -721,6 +766,34 @@
                                             <input type="text" id="ays_gleadboard_color" data-alpha="true" value="#99BB5A" />
                                         </div>
                                     </div>
+                                    <hr>
+                                    <div class="form-group row">
+                                        <div class="col-sm-12">
+                                            <label>
+                                                <?php echo __( " Global Leaderboard results table columns", $this->plugin_name ); ?>
+                                                <a class="ays_help" data-toggle="tooltip" title="<?php echo __('You can sort table columns and select which columns must display on the front-end.',$this->plugin_name)?>">
+                                                    <i class="ays_fa ays_fa_info_circle"></i>
+                                                </a>
+                                            </label>
+                                            <div class="ays-show-user-page-table-wrap">
+                                                <ul class="ays-show-user-page-table">
+                                                    <?php    
+                                                        foreach ($default_leadboard_column_names as $key => $val) {
+                                                            ?>
+                                                            <li class="ays-user-page-option-row ui-state-default">
+                                                                <input type="hidden" value="<?php echo $val; ?>" />
+                                                                <input type="checkbox" id="ays_show_gl<?php echo $val; ?>" value="<?php echo $val; ?>" class="ays-checkbox-input" checked/>
+                                                                <label for="ays_show_gl<?php echo $val; ?>">
+                                                                    <?php echo $val; ?>
+                                                                </label>
+                                                            </li>
+                                                            <?php
+                                                        }
+                                                     ?>
+                                                </ul>
+                                           </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </fieldset>
@@ -750,14 +823,32 @@
                                             <input type="text" id="ays_user_page" class="ays-text-input" onclick="this.setSelectionRange(0, this.value.length)" readonly="" value='[ays_user_page]'>
                                         </div>
                                     </div>
+                                    <hr>
                                     <div class="form-group row">
-                                        <div class="col-sm-4">
-                                            <label for="ays_show_result_report">
-                                                <?php echo __( "Show result report in user page", $this->plugin_name ); ?>
+                                        <div class="col-sm-12">
+                                            <label>
+                                                <?php echo __( "User Page results table columns", $this->plugin_name ); ?>
+                                                <a class="ays_help" data-toggle="tooltip" title="<?php echo __('You can sort table columns and select which columns must display on the front-end.',$this->plugin_name)?>">
+                                                    <i class="ays_fa ays_fa_info_circle"></i>
+                                                </a>
                                             </label>
-                                        </div>
-                                        <div class="col-sm-8">
-                                            <input type="checkbox" id="ays_show_result_report" class="ays-checkbox-input" value="on" checked/>
+                                            <div class="ays-show-user-page-table-wrap">
+                                                <ul class="ays-show-user-page-table">
+                                                    <?php
+                                                        foreach ($default_user_page_column_names as $key => $val) {
+                                                            ?>
+                                                            <li class="ays-user-page-option-row ui-state-default">
+                                                                <input type="hidden" value="<?php echo $val; ?>"/>
+                                                                <input type="checkbox" id="ays_show_user_page_<?php echo $val; ?>" value="<?php echo $val; ?>" class="ays-checkbox-input" checked/>
+                                                                <label for="ays_show_user_page_<?php echo $val; ?>">
+                                                                    <?php echo $val; ?>
+                                                                </label>
+                                                            </li>
+                                                            <?php
+                                                        }
+                                                     ?>
+                                                </ul>
+                                           </div>
                                         </div>
                                     </div>
                                 </div>

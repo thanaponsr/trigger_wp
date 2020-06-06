@@ -17,19 +17,23 @@
 }
 .ays-quiz-container .lds-ellipsis div:nth-child(1) {
   left: 8px;
-  animation: lds-ellipsis1 0.6s infinite;
+  animation: lds-ellipsis1 infinite;
+  animation-duration: 0.6s !important;
 }
 .ays-quiz-container .lds-ellipsis div:nth-child(2) {
   left: 8px;
-  animation: lds-ellipsis2 0.6s infinite;
+  animation: lds-ellipsis2 infinite;
+  animation-duration: 0.6s !important;
 }
 .ays-quiz-container .lds-ellipsis div:nth-child(3) {
   left: 32px;
-  animation: lds-ellipsis2 0.6s infinite;
+  animation: lds-ellipsis2 infinite;
+  animation-duration: 0.6s !important;
 }
 .ays-quiz-container .lds-ellipsis div:nth-child(4) {
   left: 56px;
-  animation: lds-ellipsis3 0.6s infinite;
+  animation: lds-ellipsis3 infinite;
+  animation-duration: 0.6s !important;
 }
 @keyframes lds-ellipsis1 {
   0% {
@@ -72,7 +76,8 @@
   height: 6px;
   background: #000;
   border-radius: 50%;
-  animation: lds-default 1.2s linear infinite;
+  animation: lds-default linear infinite;
+  animation-duration: 1.2s !important;
 }
 .ays-quiz-container .lds-default div:nth-child(1) {
   animation-delay: 0s;
@@ -152,7 +157,8 @@
   margin: 6px;
   border-radius: 50%;
   background: #000;
-  animation: lds-circle 2.4s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+  animation: lds-circle cubic-bezier(0, 0.2, 0.8, 1) infinite;
+  animation-duration: 2.4s !important;
 }
 @keyframes lds-circle {
   0%, 100% {
@@ -185,7 +191,8 @@
   border-radius: 50%;
   border: 6px solid #000;
   border-color: #000 transparent #000 transparent;
-  animation: lds-dual-ring 1.2s linear infinite;
+  animation: lds-dual-ring linear infinite;
+  animation-duration: 1.2s !important;
 }
 @keyframes lds-dual-ring {
   0% {
@@ -210,7 +217,8 @@
   left: 6px;
   width: 12px;
   background: #000;
-  animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+  animation: lds-facebook cubic-bezier(0, 0.5, 0.5, 1) infinite;
+  animation-duration: 1.2s !important;
 }
 .ays-quiz-container .lds-facebook div:nth-child(1) {
   left: 6px;
@@ -250,7 +258,8 @@
   height: 16px;
   border-radius: 50%;
   background: #000;
-  animation: lds-grid 1.2s linear infinite;
+  animation: lds-grid linear infinite;
+  animation-duration: 1.2s !important;
 }
 .ays-quiz-container .lds-grid div:nth-child(1) {
   top: 8px;
@@ -323,7 +332,8 @@
   width: 32px;
   height: 32px;
   background: #000;
-  animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+  animation: lds-heart infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+  animation-duration: 1.2s !important;
 }
 .ays-quiz-container .lds-heart div:after,
 .ays-quiz-container .lds-heart div:before {
@@ -380,7 +390,8 @@
   box-sizing: border-box;
   border: 24px solid #fff;
   border-color: #000 transparent #000 transparent;
-  animation: lds-hourglass 1.2s infinite;
+  animation: lds-hourglass infinite;
+  animation-duration: 1.2s !important;
 }
 @keyframes lds-hourglass {
   0% {
@@ -412,7 +423,8 @@
   margin: 8px;
   border: 8px solid #000;
   border-radius: 50%;
-  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  animation: lds-ring cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  animation-duration: 1.2s !important;
   border-color: #000 transparent transparent transparent;
 }
 .ays-quiz-container .lds-ring div:nth-child(1) {
@@ -448,7 +460,8 @@
   border: 4px solid #000;
   opacity: 1;
   border-radius: 50%;
-  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+  animation: lds-ripple cubic-bezier(0, 0.2, 0.8, 1) infinite;
+  animation-duration: 1s !important;
 }
 .ays-quiz-container .lds-ripple div:nth-child(2) {
   animation-delay: -0.5s;
@@ -479,7 +492,8 @@
   height: 80px;
 }
 .ays-quiz-container .lds-roller div {
-  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  animation: lds-roller cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  animation-duration: 1.2s !important;
   transform-origin: 40px 40px;
 }
 .ays-quiz-container .lds-roller div:after {
@@ -567,7 +581,8 @@
 }
 .ays-quiz-container .lds-spinner div {
   transform-origin: 30px 30px;
-  animation: lds-spinner 1.2s linear infinite;
+  animation: lds-spinner linear infinite;
+  animation-duration: 1.2s !important;
 }
 .ays-quiz-container .lds-spinner div:after {
   content: " ";
